@@ -1,0 +1,74 @@
+#+title: Nvim Terminal
+* Table of Contents :toc:
+- [[#open-a-terminal-inside-neovim][Open a terminal inside Neovim]]
+- [[#run-python-in-it][Run Python in it]]
+- [[#navigating-between-editor-and-terminal][Navigating between editor and terminal]]
+- [[#shortcut-split-with-terminal][Shortcut: split with terminal]]
+- [[#open-a-small-terminal-at-the-bottom][Open a small terminal at the bottom]]
+- [[#navigate-between-terminal-and-editor][Navigate between terminal and editor]]
+- [[#closeminimize-terminal][Close/minimize terminal]]
+- [[#optional-toggle-terminal-with-a-key][Optional: Toggle terminal with a key]]
+
+* Open a terminal inside Neovim
+
+=> While in normal mode, type:
+=> :terminal
+=> (or just :te).
+=> This opens a terminal buffer at the bottom of your Neovim window.
+
+* Run Python in it
+
+=> Inside that terminal, just type:
+=> python3 hello.py
+=> or even start an interactive Python shell:
+=> :python3
+
+* Navigating between editor and terminal
+
+=> Press Ctrl-w N ? switches the terminal into Normal mode (so you can move around like in a file). .
+=> Press i (or a) ? goes back to Insert mode (so you can type commands in the terminal).
+=> Use Ctrl-w w ? to jump between splits (your code and the terminal).
+
+* Shortcut: split with terminal
+
+=> If you want a terminal split right away:
+=> :split | terminal
+=> or for a vertical split
+=> :vsplit | terminal
+
+
+==>  Ah! You want the terminal at the bottom but small, like a little pane you can open/close easily. Neovim lets you do that with splits. Heres how:
+
+* Open a small terminal at the bottom
+
+=> You can specify the height when opening:
+=> :botright 10split | terminal
+=> botright ? put it at the bottom
+=> 10split ? 10 lines tall (you can change 10 to whatever you like)
+=> terminal ? open terminal
+
+* Navigate between terminal and editor
+
+=> Ctrl-w w ? jump between splits
+=> Ctrl-w k ? move up to code
+=> Ctrl-w j ? move down to terminal
+
+* Close/minimize terminal
+
+=> While in terminal, press Esc ? then type:
+=> :#+begin_quote
+=> #+end_quote
+=> Or just hide it temporarily with:
+=> :hide
+
+* Optional: Toggle terminal with a key
+
+=> Add this to your init.vim or init.lua:
+=> Vimscript version:
+=> nnoremap <F6> :botright 10split | terminal<CR>
+=> Lua version (init.lua):
+=> vim.keymap.set("n", "<F6>", ":botright 10split | terminal<CR>", { noremap = true, silent = true })
+=> Press F6 ? opens the terminal at the bottom
+=> Press Esc + :q ? closes it
+
+==> Tip: You can adjust 10split to make the terminal taller or shorter, depending on how much space you want.
