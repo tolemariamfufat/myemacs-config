@@ -1,0 +1,58 @@
+#+title: Trading
+* Table of Contents :toc:
+- [[#pd-array][PD Array]]
+  - [[#bearish-pd-array-matrix][Bearish Pd Array Matrix]]
+  - [[#buullish-pd-array-matrix][Buullish Pd Array Matrix]]
+  - [[#intraweek-market-reversals][Intraweek Market Reversals]]
+- [[#internal-range-liquidity-and-market-structure-shift-2022-episode-3][Internal range liquidity and market structure shift (2022, episode 3)]]
+- [[#intraday-order-flow-and-understanding-the-daily-range-2022-episode-5-for-indicies][Intraday Order Flow and Understanding the Daily Range (2022, episode 5 for indicies)]]
+- [[#market-structure-long-term-highlow-intermediate-term-highlow-and-short-term-highlow][Market structure: Long term high/low, Intermediate term high/low and short term high/low]]
+- [[#institutional-order-flow][Institutional order flow]]
+- [[#setup][Setup]]
+
+* PD Array
+** Bearish Pd Array Matrix
+=> Old High or low
+=> Rejection block
+=> Bearish order block
+=> Fair value gap
+=> Liquidity void
+=> Bearish breaker block
+=> Bearish mitigation block
+** Buullish Pd Array Matrix
+=> Bullish mitigation block
+=> Bullish breaker
+=> Liquidity void
+=> Fair value gap
+=> Bullish order block
+=> Rejection block
+=> Old low or high
+** Intraweek Market Reversals
+=> If price action moves faster than the last days of a week on Monday and Tuesday, it is going to meet price delivery and then reverses soon. Do not think that the speed of market movement as an oportunity to coninue in the same bias.
+=> On Wedensday and Thuesday there is monthly reversal always.
+* Internal range liquidity and market structure shift (2022, episode 3)
+=> If the buystops of old highs are taken, market structure shift occurs;
+=> If the buystops of old lows are taken, market structure shift occurs;
+=> If market structure occurs, order blocks of higher highs and higher lows or lower highs and lowser lows will be violoated;
+=> Order blocks are change in a state of price delivery, hence they go in line with market structure shft.
+* Intraday Order Flow and Understanding the Daily Range (2022, episode 5 for indicies)
+=> S&P 500 E-Mini (Sep,Dec,Marc, June), daily range = 8:30-12:00 Am and 13:00-16:30 pm, (Lunch time donot trade 12:00-13:00)
+* Market structure: Long term high/low, Intermediate term high/low and short term high/low
+=> Long term high/low is a framework it is at high time frame
+=> Intermediate term high/low balances FVG of LTH/LTL
+=> Intermediate term high/low are two types:
+        => The one which has Short term high/low below to the right and left; this one shows the market is strong
+        => The one which has Short term/low above to the right and left; this one shows the market so weak.
+        => Short term high/lows are order blocks which are failed or resisted
+* Institutional order flow
+=> The idea is that when you see an imbalnce get rebalance, the high formed as it rebalances the high shouldn't violated by price going higher than that if you are bearish or lower if you are bullish. If you blend this with an institutional order flow. What is an institutional order flow? When you are bearish all of your up closed candles should keep price from going upper than them. When you are bullish when price is moving higher, predominantly there is going to be more up closed candles; but down close candles should support price if it trades back down to them it's going to act as a support structure for an order block.
+=> Whenever we are bullish we are expecting a price swing higher generally there is not a lot of down close candles in that price swing higher but those down closed candles should support price should it trade back down into them and not see them overlapped in other words, going down blow it if it does it only permissible if there is a short term low in close proximity to it and it then like just go down and take out some sell stops if it is bullish and then reaccumulate and go higher if there is no swing low, there would be no swing sell side below it so there is nothing to concern yourself with just look for down close candles to support price higher.
+=> If these set ups broken do not trade wait for more well formed setup.
+
+* Setup
+=> If you are bullish and the middle night open is (easter or Newyourk time zone) above the 8:30 am open, then it is in discount so it is good buying opportunity because it so cheap. This is algorithimic and it repeats but it may stop some days in some markets. You may find in forex but not in bonds or in indices. But there is a setup like this every single week. You can have a move below 8:30 and then it moves upward. That is normal.
+
+=> If you are bearish and the midnight open candle is (easter or Newyourk time zone) below the 8:30 am open, then it is in perimum so it is good selling opportunity because it so expensive. This is algorithimic and it repeats but it may stop some days in some markets. You may find in forex but not in bonds or in indices. But there is a setup like this every single week. You can have a move above 8:30 and then it moves down. That is normal.
+
+=> Use the setup Daily -> Hourly -> 15 Minutes -> 3 Minutes/2 Minutes/1 Minutes
+=> For entry check ICT 2022 episodes 19,20
